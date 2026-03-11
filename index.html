@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini E-commerce Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Mini E-commerce Pro</h1>
+</header>
+
+<section class="controls">
+  <input type="text" id="search" placeholder="Search product..." onkeyup="searchProduct()">
+  <select id="filterCategory" onchange="filterCategory()">
+    <option value="all">All Categories</option>
+  </select>
+</section>
+
+<section id="products" class="products"></section>
+
+<aside class="cart-container">
+  <h2>Cart</h2>
+  <ul id="cart"></ul>
+  <h3>Total: $<span id="total">0</span></h3>
+  <button onclick="clearCart()">Clear Cart</button>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
